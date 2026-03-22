@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#ebe8e3",
+              "on-tertiary-fixed": "#1d1b16",
+              "tertiary-container": "#3d3a34",
+              "surface-container": "#f0ede8",
+              "secondary-container": "#efddc9",
+              "surface-container-low": "#f6f3ee",
+              "outline-variant": "#c3c8c2",
+              "secondary": "#695c4d",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#394b3f",
+              "on-secondary-container": "#6d6151",
+              "inverse-surface": "#31302d",
+              "primary-fixed-dim": "#b8cbbc",
+              "tertiary-fixed-dim": "#cbc6bd",
+              "surface": "#fcf9f4",
+              "on-secondary-fixed": "#231a0e",
+              "on-surface": "#1c1c19",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#a9a49c",
+              "on-surface-variant": "#434844",
+              "surface-dim": "#dcdad5",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#96a99b",
+              "primary": "#18281e",
+              "secondary-fixed-dim": "#d5c4b1",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#494640",
+              "on-background": "#1c1c19",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "inverse-primary": "#b8cbbc",
+              "primary-container": "#2d3e33",
+              "outline": "#737873",
+              "background": "#fcf9f4",
+              "surface-tint": "#516356",
+              "surface-bright": "#fcf9f4",
+              "secondary-fixed": "#f1e0cc",
+              "on-primary-fixed": "#0e1f15",
+              "tertiary-fixed": "#e8e2d9",
+              "surface-container-highest": "#e5e2dd",
+              "inverse-on-surface": "#f3f0eb",
+              "tertiary": "#27251f",
+              "on-secondary-fixed-variant": "#504536",
+              "surface-variant": "#e5e2dd",
+              "primary-fixed": "#d4e7d8"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .tonal-shift-on-scroll {
+        background-color: rgba(252, 249, 244, 0.8);
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #fcf9f4;
+      }
+      .glass-nav {
+        backdrop-filter: blur(12px);
+      }
+    </style>
+</head>
+<body class="text-on-surface selection:bg-primary/10">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md transition-all duration-300">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto RTL">
+<div class="text-2xl font-bold tracking-tighter text-[#18281e] dark:text-[#fcf9f4]"><img alt="ALPHA Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uivJ9NyYwLrxxyU3bb0XOyPTCAxDsgrGv8K4tealvEDeyWArL9YPFsbBRGGeoVjZYg5OeWu1accUVrQ8YtJESeYt3qnJ_ZuYgi4o7o-6KuvAO3Lf2lCCSPRy1hTaJVMmufGmDag7hDODfjZjQdO-9SCTiEbPkRMRvCFRnrQcy3xvZlQJ7UTVITnxzhiDKzPXQOqGFmM42CbHSAq-d8fVv9fWNdHR_0ssDLhCcq5k27uwr-cMV3r-aH6B0O57EgSf5GJMrfhZ1bG"/></div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e] border-b border-[#18281e]/30 pb-1" href="#">בית</a>
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e]/70 hover:text-[#18281e] transition-colors" href="#">האקדמיה</a>
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e]/70 hover:text-[#18281e] transition-colors" href="#">שירותים</a>
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e]/70 hover:text-[#18281e] transition-colors" href="#">צור קשר</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-manrope text-sm font-medium tracking-widest uppercase hover:opacity-80 transition-opacity duration-200 active:scale-95">
+                הזמן תור
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="container mx-auto px-8 max-w-screen-2xl grid md:grid-cols-2 gap-16 items-center">
+<div class="z-10 text-right space-y-8">
+<span class="inline-block label-md tracking-[0.2em] text-secondary uppercase font-semibold">PREMIUM BARBERING</span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-primary leading-[1.1] tracking-tight">
+                        אלפא ברברשופ:<br/>
+                        דיוק. סטייל. מצוינות.
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-lg leading-relaxed font-light">הבית של הגבר המודרני בחולון. חווית תספורת וטיפוח ברמה הגבוהה ביותר.</p>
+<div class="pt-4 flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-xl text-lg font-bold hover:opacity-90 transition-all flex items-center justify-center gap-3">
+                            קביעת תור מהירה
+                            <span class="material-symbols-outlined">calendar_today</span>
+</button>
+<button class="border border-outline-variant/30 text-primary px-10 py-5 rounded-xl text-lg font-bold hover:bg-surface-container-low transition-all">
+                            צפה בשירותים
+                        </button>
+</div>
+</div>
+<div class="relative h-[600px] md:h-[800px] w-full">
+<div class="absolute inset-0 bg-surface-container-high rounded-xl overflow-hidden shadow-2xl">
+<img alt="Interior of a modern luxury barbershop" class="w-full h-full object-cover grayscale-[0.2] hover:scale-105 transition-transform duration-700" data-alt="Minimalist modern barbershop interior with leather chairs and oak wood accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDquKp1M-5T0NvjRJBOTNfqbicZ-JJLzX02rwyuWgcm3kTtleBwuWMbJwSkkFGKxlvR6Ci2hvBaa3uLA9ny00HviwIJ1jFU0x8cpARocXXioBQ48yLJdJ_19orORfU9LIwwJsHiTXVAQb0ogZWv35LSnHGg0qzFN-4mr3rGxVKHiCtxND10buqehtLNB2AvDwr7sc3ZHyBapyEMxhmBG-TKPk6gqQBvMMTMd8I3S8MQH8Tb_-cxtIGdZ0fvF3-wK0Z7fzL8IA2P5jg"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-12 -right-12 w-48 h-48 bg-secondary-container/40 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Precision Gallery (Bento Grid) -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-8 max-w-screen-2xl">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="space-y-4">
+<span class="label-md tracking-widest text-secondary font-bold uppercase">PORTFOLIO</span>
+<h2 class="text-4xl md:text-5xl font-black text-primary">גלריית דיוק</h2>
+</div>
+<p class="text-on-surface-variant max-w-md text-lg font-light leading-relaxed">
+                        אנחנו לא רק מספרים שיער, אנחנו מעצבים זהות. כל קו, כל זווית, בסטנדרט של אומנות.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-[1000px] md:h-[700px]">
+<div class="md:col-span-8 relative rounded-lg overflow-hidden group">
+<img alt="Detailed haircut finish" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of a professional fade haircut with sharp lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuT0x5jqnzhuQSY3BtUHD4E2N6GsudNkbUgjCECmDo9Q1tP7rbU2EXXz-hevkCGMgg5zWxm9uTeYzcPoJPEFaAhWyN0BhbOzzjC6Y4JiqZDY5XSfjjCH7EGSWJ28zoj-vLQZulyjIDamMYTGPtu62XNgPbDJ9VFedSSBzAatOYBXgmertF4aMgEY5eTwkSDbXGU7ultsNhvgC8tCQVQ6rPtYpm9Owr2-bYCsQa8ND5moPosLn0GF-uERs71s1sCt2Qu8wTL8qMomg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+<span class="text-white text-xl font-bold tracking-wide">CLASSIC FADE</span>
+</div>
+</div>
+<div class="md:col-span-4 relative rounded-lg overflow-hidden group">
+<img alt="Beard grooming" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern beard sculpting and grooming service" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBplqkPWNW2rqCFihqc0Xao2Ym9oq_LTupF64yBWPf5pSxxOInXzDV85TihRtY53YvZgDvBI9_WfBwbrFhyYSEZ5FqAAilAiUBmj7Xt_F82sNFW9jG7Zy5_XbW-JkdOm2QirAv9sehG5FzL-j9uVPJLr-6u63hjsVoHDSwz8PHeWVn0ktQWktgHpFhLxRc_8rl0UH7S03qOjJB5ZP9jf1DzzaWy277ILUgpNGqigAVIAxvKuWHDaaotRbAj7DNAl6FRAYQX0rLOpo0"/>
+</div>
+<div class="md:col-span-4 relative rounded-lg overflow-hidden group">
+<img alt="Styling process" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Barber styling hair with premium products" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKHkxexnWmBnm_nT8kQsxb8Ro6kCR0OdnnpMr5-fVqnzAhHFii987ZxKl_GM-rYt89G8MWKKvKTC6tjYJLHTnDa-W51SnhoGFQHx3DGVg_m_T8q_wUzqFOtcU0yduRki1QSUL2DEjO6UVkLEgsyELtGpn93kwEwqd0c173OTbpryIsRESL8jr8e6lSf3_cw0-R3vduPlb0YXemDIfgHHm9-rYvH9ZAbjlO-RjWM2oKlE0lfKgiE3J53QWbcJlcpSIVUfWFoio0hK0"/>
+</div>
+<div class="md:col-span-8 relative rounded-lg overflow-hidden group">
+<img alt="Sharp hair lines" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Creative hair design and sharp line work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM6elQpFpnIe3iZdUhHy4FnsrVsBD38V0fjX5C7GnJs_fOgjOED27egwTY7UnsJ_rwhBaSfeBARCTYxBFt4FAUj9H27LfiQxYPUfeZF9TMDmM7SMQdOiHMzSXYMXOU6XE4C6xtr88p_FNTYZHEjq1wi-TUdXkd66k8qGy1hI5nwhwbtsSqcJVS7FyKnEJ3AlGVeYnsHOiChy8KRv6IrRfmp2k8VXiZVXGOgo3xWjdocJltUYxRxibU685qbBup7ILOpNJ4qB0Ovdg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 bg-surface-container-low rounded-t-[4rem]">
+<div class="container mx-auto px-8 max-w-screen-2xl">
+<div class="text-center mb-24 space-y-6">
+<div class="flex items-center justify-center gap-2 mb-4">
+<div class="flex text-[#FFB800]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0.8;">star_half</span>
+</div>
+<span class="font-bold text-lg text-primary">4.8</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-black text-primary">מה הלקוחות שלנו אומרים</h2>
+<p class="text-secondary max-w-xl mx-auto text-lg">מעל 500 לקוחות מרוצים בחולון שבחרו בסטנדרט של אלפא.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="p-10 bg-surface-container-lowest rounded-lg shadow-sm space-y-6">
+<span class="material-symbols-outlined text-primary-container text-4xl">format_quote</span>
+<p class="text-on-surface-variant italic text-lg leading-relaxed">
+                            "הברברשופ הכי מקצועי שהייתי בו. רמת הדיוק של יניב היא משהו שלא רואים כל יום. האווירה במקום פשוט מדהימה."
+                        </p>
+<div class="flex items-center gap-4 pt-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high"></div>
+<div>
+<h4 class="font-bold text-primary">אורן כהן</h4>
+<span class="text-xs text-secondary tracking-widest uppercase">לקוח קבוע</span>
+</div>
+</div>
+</div>
+<div class="p-10 bg-surface-container-lowest rounded-lg shadow-sm space-y-6 transform md:-translate-y-8">
+<span class="material-symbols-outlined text-primary-container text-4xl">format_quote</span>
+<p class="text-on-surface-variant italic text-lg leading-relaxed">
+                            "הגעתי פעם ראשונה לפני חודש ומאז אני לא מחליף. שירות ברמה אירופאית, ניקיון ללא פשרות ותוצאה מושלמת."
+                        </p>
+<div class="flex items-center gap-4 pt-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high"></div>
+<div>
+<h4 class="font-bold text-primary">עידן לוי</h4>
+<span class="text-xs text-secondary tracking-widest uppercase">לקוח קבוע</span>
+</div>
+</div>
+</div>
+<div class="p-10 bg-surface-container-lowest rounded-lg shadow-sm space-y-6">
+<span class="material-symbols-outlined text-primary-container text-4xl">format_quote</span>
+<p class="text-on-surface-variant italic text-lg leading-relaxed">
+                            "עיצוב הזקן הכי מדויק שעשו לי אי פעם. חוויה של ספא לגבר. ממליץ בחום לכל מי שמחפש איכות."
+                        </p>
+<div class="flex items-center gap-4 pt-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high"></div>
+<div>
+<h4 class="font-bold text-primary">גיא מזרחי</h4>
+<span class="text-xs text-secondary tracking-widest uppercase">לקוח חדש</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Details -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-8 max-w-screen-2xl grid md:grid-cols-2 gap-24 items-center">
+<div class="space-y-12">
+<div class="space-y-4">
+<span class="label-md tracking-widest text-secondary font-bold uppercase">FIND US</span>
+<h2 class="text-4xl md:text-5xl font-black text-primary">אנחנו מחכים לך</h2>
+</div>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-2">כתובתנו</h3>
+<p class="text-on-surface-variant">רח׳ הבעש״ט 18, חולון, ישראל</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">schedule</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-2">שעות פעילות</h3>
+<p class="text-on-surface-variant">א׳ - ה׳: 09:00 - 20:00</p>
+<p class="text-on-surface-variant">ו׳: 08:30 - 15:00</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-2">צרו קשר</h3>
+<p class="text-on-surface-variant">03-950-XXXX</p>
+<p class="text-on-surface-variant">info@alphabarber.co.il</p>
+</div>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-12 py-5 rounded-full text-lg font-bold hover:opacity-90 transition-all">
+                        נווט אל הקליניקה
+                    </button>
+</div>
+<div class="h-[500px] rounded-xl overflow-hidden grayscale contrast-125 shadow-xl relative group">
+<img alt="Map location placeholder" class="w-full h-full object-cover" data-location="Rishon LeTsiyon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkW9EjLRN71fudz56W5zsAD4NdPmwleZJVdj7Pu6noDMez41qYvoU0-KqJnz_PDuBzU47FSUoNFTvawR1DNo843tS9lnytQ958MY4PgVO9i6gjPKgrXaVID5qVu82ZhtAxGV87LGF8mhCoSfco03okuIG-XCgZ3cNoDA-B_2qAPvb1fqLMSrpfJZ4a5n4NeFBFdLm7lBNZ4vQBrJUNCYPMcOsZhUuwp-X01SDpQW-ni-zSnEE0wpbZFrwLlXc09MOaqUxQqh0Mk10"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-24 bg-[#f6f3ee] dark:bg-[#18281e]">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-12 py-16 max-w-screen-2xl mx-auto RTL">
+<div class="space-y-6 mb-12 md:mb-0">
+<div class="text-xl font-black text-[#18281e] dark:text-[#fcf9f4]"><img alt="ALPHA Logo" class="h-10 w-auto object-contain mb-4" src="https://lh3.googleusercontent.com/aida/ADBb0uivJ9NyYwLrxxyU3bb0XOyPTCAxDsgrGv8K4tealvEDeyWArL9YPFsbBRGGeoVjZYg5OeWu1accUVrQ8YtJESeYt3qnJ_ZuYgi4o7o-6KuvAO3Lf2lCCSPRy1hTaJVMmufGmDag7hDODfjZjQdO-9SCTiEbPkRMRvCFRnrQcy3xvZlQJ7UTVITnxzhiDKzPXQOqGFmM42CbHSAq-d8fVv9fWNdHR_0ssDLhCcq5k27uwr-cMV3r-aH6B0O57EgSf5GJMrfhZ1bG"/></div>
+<p class="max-w-xs font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd]">
+                    הסטנדרט החדש בטיפוח גברים. דיוק ללא פשרות, שירות אישי וחוויה אקסקלוסיבית.
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+<div class="space-y-4">
+<h5 class="font-manrope text-xs tracking-wide uppercase font-bold text-[#18281e] dark:text-[#fcf9f4]">ניווט</h5>
+<ul class="space-y-3">
+<li><a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">בית</a></li>
+<li><a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">האקדמיה</a></li>
+<li><a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">שירותים</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-manrope text-xs tracking-wide uppercase font-bold text-[#18281e] dark:text-[#fcf9f4]">מידע</h5>
+<ul class="space-y-3">
+<li><a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">צרו קשר</a></li>
+<li><a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">מדיניות פרטיות</a></li>
+<li><a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">תנאי שימוש</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-manrope text-xs tracking-wide uppercase font-bold text-[#18281e] dark:text-[#fcf9f4]">סושיאל</h5>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#18281e] dark:text-[#fcf9f4] cursor-pointer hover:opacity-70">photo_camera</span>
+<span class="material-symbols-outlined text-[#18281e] dark:text-[#fcf9f4] cursor-pointer hover:opacity-70">video_library</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full px-12 py-8 border-t border-[#18281e]/5 text-center">
+<p class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd]">
+                © 2024 ALPHA. כל הזכויות שמורות.
+            </p>
+</div>
+</footer>
+</body></html>
