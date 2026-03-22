@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Assistant:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#ebe8e3",
+              "on-tertiary-fixed": "#1d1b16",
+              "tertiary-container": "#3d3a34",
+              "surface-container": "#f0ede8",
+              "secondary-container": "#efddc9",
+              "surface-container-low": "#f6f3ee",
+              "outline-variant": "#c3c8c2",
+              "secondary": "#695c4d",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#394b3f",
+              "on-secondary-container": "#6d6151",
+              "inverse-surface": "#31302d",
+              "primary-fixed-dim": "#b8cbbc",
+              "tertiary-fixed-dim": "#cbc6bd",
+              "surface": "#fcf9f4",
+              "on-secondary-fixed": "#231a0e",
+              "on-surface": "#1c1c19",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#a9a49c",
+              "on-surface-variant": "#434844",
+              "surface-dim": "#dcdad5",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#96a99b",
+              "primary": "#18281e",
+              "secondary-fixed-dim": "#d5c4b1",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#494640",
+              "on-background": "#1c1c19",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "inverse-primary": "#b8cbbc",
+              "primary-container": "#2d3e33",
+              "outline": "#737873",
+              "background": "#fcf9f4",
+              "surface-tint": "#516356",
+              "surface-bright": "#fcf9f4",
+              "secondary-fixed": "#f1e0cc",
+              "on-primary-fixed": "#0e1f15",
+              "tertiary-fixed": "#e8e2d9",
+              "surface-container-highest": "#e5e2dd",
+              "inverse-on-surface": "#f3f0eb",
+              "tertiary": "#27251f",
+              "on-secondary-fixed-variant": "#504536",
+              "surface-variant": "#e5e2dd",
+              "primary-fixed": "#d4e7d8"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "Assistant"],
+              "body": ["Manrope", "Assistant"],
+              "label": ["Manrope", "Assistant"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-on-scroll {
+            background-color: rgba(252, 249, 244, 0.8);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent dark:bg-transparent backdrop-blur-md transition-all duration-300">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto RTL">
+<div class="h-12 w-auto flex items-center"><img alt="ALPHA Logo" class="h-full w-auto object-contain dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uivJ9NyYwLrxxyU3bb0XOyPTCAxDsgrGv8K4tealvEDeyWArL9YPFsbBRGGeoVjZYg5OeWu1accUVrQ8YtJESeYt3qnJ_ZuYgi4o7o-6KuvAO3Lf2lCCSPRy1hTaJVMmufGmDag7hDODfjZjQdO-9SCTiEbPkRMRvCFRnrQcy3xvZlQJ7UTVITnxzhiDKzPXQOqGFmM42CbHSAq-d8fVv9fWNdHR_0ssDLhCcq5k27uwr-cMV3r-aH6B0O57EgSf5GJMrfhZ1bG"/></div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e]/70 dark:text-[#fcf9f4]/70 hover:text-[#18281e] dark:hover:text-[#fcf9f4] transition-colors" href="#">בית</a>
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e]/70 dark:text-[#fcf9f4]/70 hover:text-[#18281e] dark:hover:text-[#fcf9f4] transition-colors" href="#">האקדמיה</a>
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e]/70 dark:text-[#fcf9f4]/70 hover:text-[#18281e] dark:hover:text-[#fcf9f4] transition-colors" href="#">שירותים</a>
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e] dark:text-[#fcf9f4] border-b border-[#18281e]/30 pb-1" href="#">צור קשר</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-manrope text-sm font-bold tracking-widest uppercase hover:opacity-80 transition-opacity duration-200 scale-95 duration-200 ease-in-out">
+                הזמן תור
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
+<!-- Hero Section - Asymmetric Editorial Layout -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-32">
+<div class="lg:col-span-7 flex flex-col justify-center">
+<span class="label-md tracking-[0.2em] text-secondary uppercase mb-4 block">Reservation &amp; Support</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter text-primary leading-tight mb-8">
+                    החוויה שלך מתחילה כאן
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+                    אנחנו מזמינים אותך להזמין תור לסשן טיפוח אישי באווירה המוקפדת של ALPHA. המקצוענות שלנו, הזמן שלך.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full text-lg font-bold flex items-center gap-3 hover:opacity-90 transition-all">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+                        הזמן תור עכשיו
+                    </button>
+<button class="bg-surface-container-highest text-primary px-10 py-5 rounded-full text-lg font-bold flex items-center gap-3 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                        WhatsApp
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-lg overflow-hidden">
+<img alt="Interior of a premium barber shop" class="w-full h-full object-cover" data-alt="Sophisticated barber shop interior with dark wood and leather" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Jbv6-qrY6TUFan5j3lnWHWWGgn196carHJB5d9BadzQRV_e--WLBzWaOd9FAeVb53l44lCX_K7sXDiQ1jBHWrcpymh58b7JGDnhekJlDJeCd0DyLd3OLd54rE0uWKnCIOnEsYCBdmpzk0_oQFH--_xJkklGLE_JrcsFQCwWMxobzwTrnSNB5ykb0-qFejzzaTbQ5LzCSTb0x2c6XhyED7po6ekln4_Q5ZaxMwxATR4bdnwKUD0NkmSmLDZrhFWgYjXZpVh7Z4hU"/>
+</div>
+<!-- Floating Info Card -->
+<div class="absolute -bottom-10 -right-10 hidden md:block p-8 glass-card rounded-lg shadow-2xl max-w-xs border border-white/20">
+<h3 class="font-bold text-xl mb-2">מיקום הסטודיו</h3>
+<p class="text-on-surface-variant text-sm mb-4">רח׳ הבעש״ט 18, חולון, ישראל. חניה בשפע לאורחי הסטודיו.</p>
+<div class="flex items-center gap-2 text-primary font-bold">
+<span class="material-symbols-outlined text-sm" data-icon="near_me">near_me</span>
+<span>נווט עכשיו</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid for Contact and Hours -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+<!-- Operating Hours -->
+<div class="md:col-span-1 bg-surface-container-low p-10 rounded-lg flex flex-col justify-between">
+<div>
+<span class="label-md tracking-widest text-secondary uppercase mb-8 block">Schedule</span>
+<h2 class="text-3xl font-headline font-bold text-primary mb-12">שעות פעילות</h2>
+</div>
+<div class="space-y-6">
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-4">
+<span class="font-medium">ראשון - חמישי</span>
+<span class="text-on-surface-variant">09:00 - 20:00</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-4">
+<span class="font-medium">שישי</span>
+<span class="text-on-surface-variant">08:00 - 15:00</span>
+</div>
+<div class="flex justify-between items-center pb-4 text-error font-medium">
+<span>שבת</span>
+<span>סגור</span>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="md:col-span-2 bg-surface-container-highest p-10 rounded-lg">
+<div class="mb-12">
+<span class="label-md tracking-widest text-secondary uppercase mb-4 block">Get in touch</span>
+<h2 class="text-3xl font-headline font-bold text-primary">שלחו לנו הודעה</h2>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-widest text-secondary font-bold">שם מלא</label>
+<input class="w-full bg-transparent border-b border-outline-variant/40 py-3 focus:outline-none focus:border-primary transition-colors border-opacity-60" placeholder="ישראל ישראלי" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs uppercase tracking-widest text-secondary font-bold">טלפון</label>
+<input class="w-full bg-transparent border-b border-outline-variant/40 py-3 focus:outline-none focus:border-primary transition-colors border-opacity-60" placeholder="050-0000000" type="tel"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="block text-xs uppercase tracking-widest text-secondary font-bold">הודעה</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant/40 py-3 focus:outline-none focus:border-primary transition-colors resize-none border-opacity-60" placeholder="איך נוכל לעזור?" rows="3"></textarea>
+</div>
+<div class="md:col-span-2 pt-4">
+<button class="bg-primary text-on-primary w-full md:w-auto px-12 py-4 rounded-full font-bold hover:opacity-90 transition-all">שלח הודעה</button>
+</div>
+</form>
+</div>
+</section>
+<!-- Minimal Map Integration -->
+<section class="mb-32">
+<div class="rounded-lg overflow-hidden grayscale contrast-125 brightness-95 opacity-80 hover:grayscale-0 transition-all duration-700 h-[500px] relative">
+<img alt="Map view of Rishon LeZion" class="w-full h-full object-cover" data-alt="Minimalist monochromatic city map layout" data-location="Rishon LeZion, Israel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjUpoNII9JvEERW07S9V8SowFEVwvwOvbQtAt_OOZ6gcJhDSelSXQX1g2QoWLDeJoTThsuTV9UACDkuHomQlkX2QRwp8VN9gZ4cph3xUsbt6BMh5QYgnVc8crOvAdxInfB5AMnPszNBAmfBIiaLF9m-c7hiIfJgEhc6Es2Vz06iJvCXsX7GmfHEmq0UtVdgatSL0qZ6qjP7tCJW5eQEtdS4me3J0JgbvuWoOcT2hHhwDKlm80td9_U36xN1IrVgr0GpPu1gokNvJk"/>
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<!-- Location Pin Overlay -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary shadow-2xl animate-bounce">
+<span class="material-symbols-outlined" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="mt-4 glass-card px-4 py-2 rounded-full text-sm font-bold shadow-lg">רח׳ הבעש״ט 18, חולון, ישראל</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-24 bg-[#f6f3ee] dark:bg-[#18281e]">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-12 py-16 max-w-screen-2xl mx-auto RTL">
+<div class="mb-12 md:mb-0">
+<div class="h-10 w-auto flex items-center mb-6"><img alt="ALPHA Logo" class="h-full w-auto object-contain dark:invert" src="https://lh3.googleusercontent.com/aida/ADBb0uivJ9NyYwLrxxyU3bb0XOyPTCAxDsgrGv8K4tealvEDeyWArL9YPFsbBRGGeoVjZYg5OeWu1accUVrQ8YtJESeYt3qnJ_ZuYgi4o7o-6KuvAO3Lf2lCCSPRy1hTaJVMmufGmDag7hDODfjZjQdO-9SCTiEbPkRMRvCFRnrQcy3xvZlQJ7UTVITnxzhiDKzPXQOqGFmM42CbHSAq-d8fVv9fWNdHR_0ssDLhCcq5k27uwr-cMV3r-aH6B0O57EgSf5GJMrfhZ1bG"/></div>
+<p class="max-w-xs text-[#695c4d] dark:text-[#e5e2dd] leading-relaxed mb-8">
+                    בית לטיפוח וסגנון גברי. חווית פרימיום המשלבת מסורת עם חדשנות.
+                </p>
+<div class="flex gap-6">
+<a class="text-[#18281e] dark:text-[#fcf9f4] hover:opacity-60 transition-opacity" href="#">Instagram</a>
+<a class="text-[#18281e] dark:text-[#fcf9f4] hover:opacity-60 transition-opacity" href="#">Facebook</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-12 md:gap-24">
+<div class="flex flex-col gap-4">
+<h4 class="font-manrope text-xs tracking-wide uppercase font-bold text-[#18281e] dark:text-[#fcf9f4]">ניווט</h4>
+<a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">בית</a>
+<a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">האקדמיה</a>
+<a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">שירותים</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-manrope text-xs tracking-wide uppercase font-bold text-[#18281e] dark:text-[#fcf9f4]">משפטי</h4>
+<a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">מדיניות פרטיות</a>
+<a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">תנאי שימוש</a>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-[#18281e]/5 text-center md:text-right">
+<span class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd]">© 2024 ALPHA. כל הזכויות שמורות.</span>
+</div>
+</footer>
+</body></html>

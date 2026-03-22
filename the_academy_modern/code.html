@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;family=Assistant:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#ebe8e3",
+              "on-tertiary-fixed": "#1d1b16",
+              "tertiary-container": "#3d3a34",
+              "surface-container": "#f0ede8",
+              "secondary-container": "#efddc9",
+              "surface-container-low": "#f6f3ee",
+              "outline-variant": "#c3c8c2",
+              "secondary": "#695c4d",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#394b3f",
+              "on-secondary-container": "#6d6151",
+              "inverse-surface": "#31302d",
+              "primary-fixed-dim": "#b8cbbc",
+              "tertiary-fixed-dim": "#cbc6bd",
+              "surface": "#fcf9f4",
+              "on-secondary-fixed": "#231a0e",
+              "on-surface": "#1c1c19",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#a9a49c",
+              "on-surface-variant": "#434844",
+              "surface-dim": "#dcdad5",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#96a99b",
+              "primary": "#18281e",
+              "secondary-fixed-dim": "#d5c4b1",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#494640",
+              "on-background": "#1c1c19",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "inverse-primary": "#b8cbbc",
+              "primary-container": "#2d3e33",
+              "outline": "#737873",
+              "background": "#fcf9f4",
+              "surface-tint": "#516356",
+              "surface-bright": "#fcf9f4",
+              "secondary-fixed": "#f1e0cc",
+              "on-primary-fixed": "#0e1f15",
+              "tertiary-fixed": "#e8e2d9",
+              "surface-container-highest": "#e5e2dd",
+              "inverse-on-surface": "#f3f0eb",
+              "tertiary": "#27251f",
+              "on-secondary-fixed-variant": "#504536",
+              "surface-variant": "#e5e2dd",
+              "primary-fixed": "#d4e7d8"
+            },
+            fontFamily: {
+              "headline": ["Assistant", "Manrope", "sans-serif"],
+              "body": ["Assistant", "Manrope", "sans-serif"],
+              "label": ["Assistant", "Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .tonal-shift-on-scroll {
+            background-color: rgba(252, 249, 244, 0.8);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(252, 249, 244, 0) 0%, rgba(252, 249, 244, 1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 bg-transparent dark:bg-transparent backdrop-blur-md transition-all duration-300">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto flex-row-reverse">
+<div class="text-2xl font-bold tracking-tighter text-[#18281e] dark:text-[#fcf9f4]"><img alt="ALPHA Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uivJ9NyYwLrxxyU3bb0XOyPTCAxDsgrGv8K4tealvEDeyWArL9YPFsbBRGGeoVjZYg5OeWu1accUVrQ8YtJESeYt3qnJ_ZuYgi4o7o-6KuvAO3Lf2lCCSPRy1hTaJVMmufGmDag7hDODfjZjQdO-9SCTiEbPkRMRvCFRnrQcy3xvZlQJ7UTVITnxzhiDKzPXQOqGFmM42CbHSAq-d8fVv9fWNdHR_0ssDLhCcq5k27uwr-cMV3r-aH6B0O57EgSf5GJMrfhZ1bG"/></div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-[#18281e]/70 dark:text-[#fcf9f4]/70 hover:text-[#18281e] dark:hover:text-[#fcf9f4] transition-colors font-manrope text-sm font-medium tracking-widest uppercase" href="#">בית</a>
+<a class="text-[#18281e] dark:text-[#fcf9f4] border-b border-[#18281e]/30 pb-1 font-manrope text-sm font-medium tracking-widest uppercase" href="#">האקדמיה</a>
+<a class="text-[#18281e]/70 dark:text-[#fcf9f4]/70 hover:text-[#18281e] dark:hover:text-[#fcf9f4] transition-colors font-manrope text-sm font-medium tracking-widest uppercase" href="#">שירותים</a>
+<a class="text-[#18281e]/70 dark:text-[#fcf9f4]/70 hover:text-[#18281e] dark:hover:text-[#fcf9f4] transition-colors font-manrope text-sm font-medium tracking-widest uppercase" href="#">צור קשר</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-manrope text-sm font-medium tracking-widest uppercase hover:opacity-80 transition-opacity duration-200">
+                הזמן תור
+            </button>
+</nav>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="relative px-8 md:px-24 mb-32">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row-reverse items-center gap-16">
+<div class="w-full md:w-1/2">
+<div class="relative group">
+<div class="absolute inset-0 bg-primary/5 rounded-lg -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="Professional barber teaching" class="relative z-10 w-full aspect-[4/5] object-cover rounded-lg shadow-sm border border-outline-variant/10" data-alt="Close up of professional barber teaching techniques" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3WL5LgPPLIuJsKxtFW1-G7Ba-iPdeESnpYOxNEdaAvj7iWP3MwzHnUt7Hl-PmMZrdhtFFMf7S_6wdYsx3TymZ2N0o862FVKWCANAfC4VfRunGgtckecFmG4-KfUpIR4kOtl9cSHy-NgzqoJBs5qXUK_Ok2XnIqkljqRI_cOc-bSkvYr4xkpwrRnEybln4oKQs26KqELcliiRwX8cacM21XZJ8GBDnbJkjGA-uPaohVWy4J5IFAetISxd8OPh2hKT5vvgDtO-heaA"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 text-right">
+<span class="label-md tracking-[0.2em] text-secondary font-semibold uppercase block mb-6">PRO MASTERCLASS SERIES</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-primary leading-[1.1] mb-8 tracking-tight">
+                        האקדמיה של אלפא: <br/>
+<span class="text-secondary font-light">קורסי עיצוב זקן והשתלמויות</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl ml-auto leading-relaxed mb-12">
+                        אנחנו לא רק מעצבים שיער, אנחנו יוצרים אמנות. האקדמיה שלנו מציעה מסלול התמקצעות ייחודי לברברים שרוצים להוביל את התחום בטכניקה ובסטייל.
+                    </p>
+<div class="flex flex-col sm:flex-row-reverse gap-6">
+<a class="bg-primary text-on-primary px-10 py-5 rounded-full flex items-center justify-center gap-3 hover:opacity-90 transition-all transform active:scale-95 shadow-lg shadow-primary/10" href="https://wa.me/#">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-bold">לפרטים והרשמה לקורס הקרוב</span>
+</a>
+<a class="border border-outline-variant/30 text-primary px-10 py-5 rounded-full flex items-center justify-center hover:bg-surface-container transition-colors" href="#courses">
+<span>צפו בתכנית הלימודים</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Courses Section -->
+<section class="px-8 md:px-24 py-24 bg-surface-container-low rounded-t-[3rem]" id="courses">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="text-right">
+<h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-4">מסלולי ההכשרה שלנו</h2>
+<p class="text-on-surface-variant max-w-lg">דיוק, סבלנות ואמנות. בחרו את המסלול המתאים לדרגת המקצוענות שלכם.</p>
+</div>
+<div class="flex gap-4">
+<span class="bg-surface px-4 py-2 rounded-full text-xs font-bold tracking-widest text-secondary border border-outline-variant/20 uppercase">2024 ENROLLMENT OPEN</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Master Course Card -->
+<div class="md:col-span-7 bg-surface-container-lowest p-10 md:p-16 rounded-lg flex flex-col justify-between group hover:bg-surface transition-colors duration-500 border border-transparent hover:border-outline-variant/20">
+<div>
+<div class="flex justify-between items-start mb-12">
+<span class="bg-primary-fixed text-on-primary-fixed px-4 py-1.5 rounded-full text-xs font-bold">הנרשם ביותר</span>
+<span class="material-symbols-outlined text-4xl text-secondary">content_cut</span>
+</div>
+<h3 class="text-4xl font-headline font-bold text-primary mb-6">קורס עיצוב זקן למקצוענים</h3>
+<ul class="space-y-6 mb-12">
+<li class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" data-weight="fill">check_circle</span>
+<span>טכניקות גילוח מסורתיות עם תער (Straight Razor)</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" data-weight="fill">check_circle</span>
+<span>התאמת מבנה הזקן לתווי הפנים ואורח החיים</span>
+</li>
+<li class="flex items-center gap-4 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary" data-weight="fill">check_circle</span>
+<span>טיפול במוצרי פרימיום ושמנים אורגניים</span>
+</li>
+</ul>
+</div>
+<div class="flex items-center justify-between pt-8 border-t border-outline-variant/20">
+<div>
+<p class="text-xs text-secondary uppercase tracking-widest font-bold mb-1">DURATION</p>
+<p class="text-primary font-bold">12 מפגשים מעשיים</p>
+</div>
+<button class="bg-primary text-on-primary h-14 w-14 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+</div>
+</div>
+<!-- Advanced Workshop Card -->
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="bg-primary-container text-on-primary-container p-10 rounded-lg flex-1 group hover:opacity-95 transition-opacity">
+<h3 class="text-2xl font-headline font-bold mb-4">השתלמויות טכניקה מתקדמת</h3>
+<p class="text-on-primary-container/80 mb-8 leading-relaxed">יום עיון מרוכז לאנשי מקצוע: טכניקות Fade מתקדמות ושילוב זקן במעברים דקים.</p>
+<div class="flex items-center gap-2 font-bold group-hover:translate-x-[-8px] transition-transform cursor-pointer">
+<span>לכל מועדי ההשתלמויות</span>
+<span class="material-symbols-outlined">chevron_left</span>
+</div>
+</div>
+<div class="bg-surface-container-highest p-10 rounded-lg flex-1 relative overflow-hidden group">
+<div class="relative z-10">
+<h3 class="text-2xl font-headline font-bold text-primary mb-2">שיעורים פרטיים (1-on-1)</h3>
+<p class="text-on-surface-variant text-sm mb-6">ליווי אישי על דוגמנים בזמן אמת בסטודיו אלפא.</p>
+<span class="text-primary font-bold underline decoration-secondary/30 underline-offset-4">תאמו עכשיו</span>
+</div>
+<span class="material-symbols-outlined absolute -bottom-4 -left-4 text-9xl text-primary/5 rotate-12 group-hover:rotate-0 transition-transform duration-700">school</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats / Why Us -->
+<section class="py-32 px-8 md:px-24">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div class="space-y-2">
+<p class="text-5xl font-headline font-black text-primary">450+</p>
+<p class="text-xs tracking-[0.2em] text-secondary font-bold uppercase">בוגרים מרוצים</p>
+</div>
+<div class="space-y-2">
+<p class="text-5xl font-headline font-black text-primary">15</p>
+<p class="text-xs tracking-[0.2em] text-secondary font-bold uppercase">שנות ניסיון</p>
+</div>
+<div class="space-y-2">
+<p class="text-5xl font-headline font-black text-primary">1:1</p>
+<p class="text-xs tracking-[0.2em] text-secondary font-bold uppercase">יחס אישי</p>
+</div>
+<div class="space-y-2">
+<p class="text-5xl font-headline font-black text-primary">100%</p>
+<p class="text-xs tracking-[0.2em] text-secondary font-bold uppercase">הכשרה פרקטית</p>
+</div>
+</div>
+</section>
+<!-- Signature Gallery (Editorial Images) -->
+<section class="mb-32">
+<div class="flex overflow-x-auto pb-12 gap-8 px-8 md:px-24 no-scrollbar">
+<div class="min-w-[300px] md:min-w-[450px]">
+<img alt="Barber detail" class="w-full aspect-video object-cover rounded-lg" data-alt="Macro shot of barber using high-end clippers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWFBE2lYnkq7ZfVrXOenGAbpdo_Dy1FepenxNbQz5lx0f_zCqCmHuvQBo2urPzu5uGntYKs2l59CiSFZYclsk9c-VtQ2QmNn1oDP03dK67j0ct_WmHE0kdwjJsblY5nTfIHSLWfZVNIlanj4qcXqqeMeP9PfhJX1f00pMET_YQE3sAEY02OIU52rSPhZJN3EmOjty9LDH9VWMTzU1YSGep1Rdlfpqis0-aS2_reJyMaViNNe3xUoEKtywQrA80OwNElR_L_W4pcMI"/>
+</div>
+<div class="min-w-[300px] md:min-w-[450px]">
+<img alt="Education session" class="w-full aspect-video object-cover rounded-lg" data-alt="Students watching a beard design demonstration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfnHmMpqGK15V9sy_Yz3Eo7UofUrmZd7I9ESFwyogsfmAoZdt47uZ17lOqRhKbUo-2_9wErrglzGx0jq4u_TOwc8qRqC0uov3HDSMjk1Fm97krU4_2vVZpvWKn8XSNAAB2P-KfnHPSx3h4YYTv4-NtaNMK6yWn4lx-iScUwKlKNy72VsL2TtzBHbf25WnGQ4p_NTrLqHorHMx8CFAQ7QS3HbPJvpHjO2_rQhqPQFEV7RG-TIp-iOw1uOopHFwUIGFD9vRbbAXHtG0"/>
+</div>
+<div class="min-w-[300px] md:min-w-[450px]">
+<img alt="Premium Tools" class="w-full aspect-video object-cover rounded-lg" data-alt="Professional high-end barbering tools on marble surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbLin1DnGDV6JzT-KaBQiOCXwIjncB_VWTv0hvbwxM5Nuea5zRsW6jW5xOIX0Bn3b550n5RRWfrS3Zzs7QEKB35Tw-VhshdZIJWr4A0zfib1-A3rU-DGyFW7y5AN8_ogTYI3GvuSXmfGYkW8mtGKBbuj3XXq6RElpZhjUkOKPauSt7BJalOIVVUDsDCXSQKBshCtTMCYKtsb6NTWvXh23Hsk606Fme8BU4JiOz5LSazzaFyUY8_cm_BEPVbH4z1PjXRrOk5EaFDpc"/>
+</div>
+</div>
+</section>
+<!-- Lead Capture / WhatsApp CTA -->
+<section class="px-8 md:px-24 mb-24">
+<div class="max-w-4xl mx-auto bg-primary p-12 md:p-20 rounded-xl relative overflow-hidden">
+<!-- Background decoration -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10 text-center">
+<h2 class="text-3xl md:text-5xl font-headline font-bold text-on-primary mb-6">מוכנים לקחת את המקצוע שלכם לשלב הבא?</h2>
+<p class="text-on-primary/80 text-lg mb-12 max-w-xl mx-auto">
+                        השאירו פרטים ונחזור אליכם עם תכנית לימודים מפורטת ומחירי הרשמה מוקדמת.
+                    </p>
+<form class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 text-right">
+<div class="space-y-1">
+<label class="text-xs text-on-primary/60 font-bold tracking-widest uppercase mr-2">שם מלא</label>
+<input class="w-full bg-white/10 border-0 border-b border-white/20 text-on-primary focus:ring-0 focus:border-white transition-colors py-3 px-4 rounded-t-lg" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs text-on-primary/60 font-bold tracking-widest uppercase mr-2">טלפון</label>
+<input class="w-full bg-white/10 border-0 border-b border-white/20 text-on-primary focus:ring-0 focus:border-white transition-colors py-3 px-4 rounded-t-lg" type="tel"/>
+</div>
+<div class="flex items-end">
+<button class="w-full bg-surface text-primary py-4 rounded-full font-bold hover:bg-white transition-colors" type="submit">שלחו בקשה</button>
+</div>
+</form>
+<div class="flex items-center justify-center gap-4 text-on-primary/60">
+<span class="h-px w-12 bg-white/20"></span>
+<span class="text-sm font-bold tracking-widest uppercase">או דברו איתנו ישירות</span>
+<span class="h-px w-12 bg-white/20"></span>
+</div>
+<a class="mt-8 inline-flex items-center gap-3 text-on-primary hover:text-white transition-colors group" href="https://wa.me/#">
+<span class="text-xl font-bold border-b border-white/30 pb-1">בוואטסאפ לפרטים מהירים</span>
+<span class="material-symbols-outlined group-hover:translate-x-[-4px] transition-transform">arrow_back</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full rounded-t-[3rem] mt-24 bg-[#f6f3ee] dark:bg-[#18281e]">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-12 py-16 max-w-screen-2xl mx-auto flex-row-reverse text-right">
+<div class="mb-12 md:mb-0">
+<div class="text-xl font-black text-[#18281e] dark:text-[#fcf9f4] mb-4"><img alt="ALPHA Logo" class="h-10 w-auto mb-4" src="https://lh3.googleusercontent.com/aida/ADBb0uivJ9NyYwLrxxyU3bb0XOyPTCAxDsgrGv8K4tealvEDeyWArL9YPFsbBRGGeoVjZYg5OeWu1accUVrQ8YtJESeYt3qnJ_ZuYgi4o7o-6KuvAO3Lf2lCCSPRy1hTaJVMmufGmDag7hDODfjZjQdO-9SCTiEbPkRMRvCFRnrQcy3xvZlQJ7UTVITnxzhiDKzPXQOqGFmM42CbHSAq-d8fVv9fWNdHR_0ssDLhCcq5k27uwr-cMV3r-aH6B0O57EgSf5GJMrfhZ1bG"/></div>
+<p class="text-[#695c4d] dark:text-[#e5e2dd] max-w-xs leading-relaxed">הסטנדרט החדש של טיפוח הגבר המודרני. מקצוענות ללא פשרות, חוויה ללא תחרות.</p><p class="text-[#695c4d] dark:text-[#e5e2dd] mt-4 font-manrope text-xs tracking-wide uppercase">רח׳ הבעש״ט 18, חולון, ישראל</p>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div>
+<h4 class="text-xs tracking-wide uppercase font-bold text-[#18281e] dark:text-[#fcf9f4] mb-6">ניווט</h4>
+<ul class="space-y-4">
+<li><a class="text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors font-manrope text-xs tracking-wide uppercase" href="#">בית</a></li>
+<li><a class="text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors font-manrope text-xs tracking-wide uppercase" href="#">האקדמיה</a></li>
+<li><a class="text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors font-manrope text-xs tracking-wide uppercase" href="#">שירותים</a></li>
+<li><a class="text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors font-manrope text-xs tracking-wide uppercase" href="#">צור קשר</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs tracking-wide uppercase font-bold text-[#18281e] dark:text-[#fcf9f4] mb-6">חוקי</h4>
+<ul class="space-y-4">
+<li><a class="text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors font-manrope text-xs tracking-wide uppercase" href="#">מדיניות פרטיות</a></li>
+<li><a class="text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors font-manrope text-xs tracking-wide uppercase" href="#">תנאי שימוש</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w-full px-12 py-8 border-t border-outline-variant/10 max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-right">
+<p class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd]">© 2024 ALPHA. כל הזכויות שמורות.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-[#18281e] cursor-pointer">share</span>
+<span class="material-symbols-outlined text-[#18281e] cursor-pointer">camera</span>
+</div>
+</div>
+</footer>
+</body></html>

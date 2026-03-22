@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#ebe8e3",
+              "on-tertiary-fixed": "#1d1b16",
+              "tertiary-container": "#3d3a34",
+              "surface-container": "#f0ede8",
+              "secondary-container": "#efddc9",
+              "surface-container-low": "#f6f3ee",
+              "outline-variant": "#c3c8c2",
+              "secondary": "#695c4d",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#394b3f",
+              "on-secondary-container": "#6d6151",
+              "inverse-surface": "#31302d",
+              "primary-fixed-dim": "#b8cbbc",
+              "tertiary-fixed-dim": "#cbc6bd",
+              "surface": "#fcf9f4",
+              "on-secondary-fixed": "#231a0e",
+              "on-surface": "#1c1c19",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#a9a49c",
+              "on-surface-variant": "#434844",
+              "surface-dim": "#dcdad5",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#96a99b",
+              "primary": "#18281e",
+              "secondary-fixed-dim": "#d5c4b1",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#494640",
+              "on-background": "#1c1c19",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "inverse-primary": "#b8cbbc",
+              "primary-container": "#2d3e33",
+              "outline": "#737873",
+              "background": "#fcf9f4",
+              "surface-tint": "#516356",
+              "surface-bright": "#fcf9f4",
+              "secondary-fixed": "#f1e0cc",
+              "on-primary-fixed": "#0e1f15",
+              "tertiary-fixed": "#e8e2d9",
+              "surface-container-highest": "#e5e2dd",
+              "inverse-on-surface": "#f3f0eb",
+              "tertiary": "#27251f",
+              "on-secondary-fixed-variant": "#504536",
+              "surface-variant": "#e5e2dd",
+              "primary-fixed": "#d4e7d8"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(252, 249, 244, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .tonal-shift-on-scroll {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md transition-all duration-300">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto RTL">
+<div class="text-2xl font-bold tracking-tighter text-[#18281e] dark:text-[#fcf9f4]"><img alt="ALPHA" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uivJ9NyYwLrxxyU3bb0XOyPTCAxDsgrGv8K4tealvEDeyWArL9YPFsbBRGGeoVjZYg5OeWu1accUVrQ8YtJESeYt3qnJ_ZuYgi4o7o-6KuvAO3Lf2lCCSPRy1hTaJVMmufGmDag7hDODfjZjQdO-9SCTiEbPkRMRvCFRnrQcy3xvZlQJ7UTVITnxzhiDKzPXQOqGFmM42CbHSAq-d8fVv9fWNdHR_0ssDLhCcq5k27uwr-cMV3r-aH6B0O57EgSf5GJMrfhZ1bG"/></div>
+<div class="hidden md:flex gap-12 items-center">
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e]/70 dark:text-[#fcf9f4]/70 hover:text-[#18281e] dark:hover:text-[#fcf9f4] transition-colors" href="#">בית</a>
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e]/70 dark:text-[#fcf9f4]/70 hover:text-[#18281e] dark:hover:text-[#fcf9f4] transition-colors" href="#">האקדמיה</a>
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e] dark:text-[#fcf9f4] border-b border-[#18281e]/30 pb-1" href="#">שירותים</a>
+<a class="font-manrope text-sm font-medium tracking-widest uppercase text-[#18281e]/70 dark:text-[#fcf9f4]/70 hover:text-[#18281e] dark:hover:text-[#fcf9f4] transition-colors" href="#">צור קשר</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-manrope text-xs tracking-widest uppercase hover:opacity-80 transition-opacity duration-200 scale-95 duration-200 ease-in-out">הזמן תור</button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-24 flex flex-col md:flex-row items-end gap-12">
+<div class="flex-1">
+<span class="label-md uppercase tracking-[0.2em] text-secondary mb-4 block">Grooming &amp; Style</span>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-primary leading-tight">
+                    שירותים <span class="italic font-light text-secondary-container bg-primary px-4 rounded-lg">ומחירון</span>
+</h1>
+<p class="mt-8 text-lg text-secondary max-w-md font-light leading-relaxed">
+                    חווית טיפוח המשלבת מסורת קלאסית עם דיוק מודרני. בחר את הטיפול המתאים לך והתמסר לידיים המקצועיות שלנו.
+                </p>
+</div>
+<div class="w-full md:w-1/3 aspect-[4/5] overflow-hidden rounded-lg">
+<img alt="Interior" class="w-full h-full object-cover" data-alt="Modern minimalist upscale barbershop interior decor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcU4xtvA8Ebh9hvQI4_rJFBgJGrjihdUeZYBH4p7fsKu7sQAxHe3BpjFYOzEUniV8M8dXlkwC1WCLuH95kMQ1E0H0NzDF6MXTkgN5I2vg7kTCCSEC1YtdiCZ2lPJEC3qXzLal5qtqZdTkReqXLJxkTLbbjkdeTLMubDtpwjiVNhVnmqRgVRgFJaTtTffMzF55qUgvGkxozyIalocGrPkJ1DaNiCWb2koVcjG-9ytR8PYlKQO9bxIyl_ZRMeowFxbhaYAFnb7k00nI"/>
+</div>
+</header>
+<!-- Services Section: Asymmetric Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Service List - Bento Inspired Layout -->
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Item 1 -->
+<div class="group bg-surface-container-low p-10 rounded-lg flex flex-col justify-between hover:bg-surface-container-high transition-colors duration-500 min-h-[300px]">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="content_cut">content_cut</span>
+<span class="text-2xl font-bold text-primary">₪80</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary mb-2">תספורת גבר</h3>
+<p class="text-secondary/70 text-sm leading-relaxed">עיצוב שיער בהתאמה אישית למבנה הפנים, כולל חפיפה מפנקת ועיצוב במוצרי פרימיום.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group bg-surface-container-lowest p-10 rounded-lg flex flex-col justify-between border border-outline-variant/10 hover:border-outline-variant transition-all duration-500 min-h-[300px]">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="brush">brush</span>
+<span class="text-2xl font-bold text-primary">₪50</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary mb-2">עיצוב זקן יוקרתי</h3>
+<p class="text-secondary/70 text-sm leading-relaxed">סימטריה מושלמת וקווי מתאר חדים. טיפול בשמנים אורגניים לריכוך והזנה.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group bg-primary text-on-primary p-10 rounded-lg flex flex-col justify-between min-h-[300px] md:col-span-2">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-5xl text-secondary-fixed" data-icon="stars">stars</span>
+<div>
+<h3 class="text-3xl font-extrabold tracking-tight">חבילת אלפא (שיער + זקן)</h3>
+<p class="text-on-primary-container text-sm mt-1">החוויה המלאה של ALPHA - דיוק מקסימלי מכף רגל ועד ראש.</p>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-4xl font-black">₪110</span>
+<span class="text-[10px] uppercase tracking-widest opacity-60">הבחירה הפופולרית</span>
+</div>
+</div>
+<div class="mt-8 flex gap-4 overflow-x-auto no-scrollbar">
+<span class="px-4 py-2 bg-primary-container rounded-full text-[10px] uppercase tracking-tighter whitespace-nowrap">חפיפה כפולה</span>
+<span class="px-4 py-2 bg-primary-container rounded-full text-[10px] uppercase tracking-tighter whitespace-nowrap">עיצוב זקן</span>
+<span class="px-4 py-2 bg-primary-container rounded-full text-[10px] uppercase tracking-tighter whitespace-nowrap">מסאז' קרקפת</span>
+<span class="px-4 py-2 bg-primary-container rounded-full text-[10px] uppercase tracking-tighter whitespace-nowrap">סטיילינג</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group bg-surface-container-low p-10 rounded-lg flex flex-col justify-between hover:bg-surface-container-high transition-colors duration-500 min-h-[300px]">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="soap">soap</span>
+<span class="text-2xl font-bold text-primary">₪70</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary mb-2">גילוח מלכותי</h3>
+<p class="text-secondary/70 text-sm leading-relaxed">גילוח מסורתי בתער, מגבות חמות, וטיפול מרגיע לעור הפנים בניחוחות של פעם.</p>
+</div>
+</div>
+<!-- Bespoke Component: Signature Gallery Card -->
+<div class="relative overflow-hidden rounded-lg min-h-[300px]">
+<img alt="Grooming Tools" class="absolute inset-0 w-full h-full object-cover" data-alt="Close up of professional vintage silver barber tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNhqZ1wZN0HvzqFGhn8jugYnJ4aZSCjcitA6fCpW-GgXbxguB-nhgk0CPtrydClXZGn-90LyMDfs1X76D-mh3AR075CQ4pLbUPB-YXQeuCKq-vPs2dcrDUtUaOG_gEMeUcO61b1JDfXmNUiAgGxmGExNEWqAqPvuAqlr-qXHLBinsnjG1m3TU4d_By7Q24MV0PXu2jkARN-diXuUrAU__2vFY-K---Yg-PvSxgKWjNCFfnLZSLFBGSwSMnyx5gnVvyl1LDqfCWXsg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-10">
+<p class="text-on-primary text-sm font-medium tracking-wide">דיוק בכל פרט קטן. מהתער ועד המגבת.</p>
+</div>
+</div>
+</div>
+<!-- Sidebar Info -->
+<aside class="lg:col-span-4 space-y-8">
+<div class="bg-surface-container-lowest p-10 rounded-lg border border-outline-variant/10">
+<h4 class="text-xs uppercase tracking-[0.3em] font-bold text-secondary mb-8">שעות פעילות</h4>
+<ul class="space-y-6 text-sm">
+<li class="flex justify-between border-b border-outline-variant/10 pb-4">
+<span>ראשון - חמישי</span>
+<span class="font-bold">09:00 - 20:00</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-4">
+<span>שישי</span>
+<span class="font-bold">08:00 - 15:00</span>
+</li>
+<li class="flex justify-between text-secondary/40">
+<span>שבת</span>
+<span class="font-bold">סגור</span>
+</li>
+</ul>
+</div>
+<div class="bg-secondary-container p-10 rounded-lg text-on-secondary-container">
+<span class="material-symbols-outlined text-3xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+<h4 class="text-xl font-bold mb-4 italic">The Alpha Guarantee</h4>
+<p class="text-sm leading-relaxed opacity-80">
+                        אנחנו מאמינים שטיפוח הוא לא רק עניין של מראה, אלא של הרגשה. כל לקוח מקבל את מלוא הזמן והתשומת לב המגיעים לו.
+                    </p>
+</div>
+<div class="relative rounded-lg overflow-hidden aspect-video grayscale hover:grayscale-0 transition-all duration-700 cursor-pointer">
+<img alt="Map Placeholder" class="w-full h-full object-cover" data-alt="Barbershop location map view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAcBWPdzKfYOy49pY3k66vuQxsCpb_q8ssAenF_dO2T--vQcijPEkbcfE2p2oNTckgl9Ano4nbrvqBP0dxdLldT6IhSdNuPAYQXStip3q4iI0hBWgoGJAf6wSAj9dMxa7fwsqVuFMod5DYMiCMQINhM5Ttc9KRweBzaDi-xjEHydOKOvvqsPYBU7x8w_QuAEp7p4JypUjCpNppbuLEyrFFzkC8xTTOnmWfDyLmfoSH-w2PdDsZAS3hmWKWlSH7KJ4jJTIACmhev60"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+<span class="px-6 py-2 bg-surface text-primary rounded-full text-xs font-bold tracking-widest uppercase">נווט אלינו</span>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-24 bg-[#f6f3ee] dark:bg-[#18281e]">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-12 py-16 max-w-screen-2xl mx-auto RTL">
+<div class="mb-12 md:mb-0">
+<div class="text-xl font-black text-[#18281e] dark:text-[#fcf9f4] mb-6"><img alt="ALPHA" class="h-10 w-auto object-contain mb-6" src="https://lh3.googleusercontent.com/aida/ADBb0uivJ9NyYwLrxxyU3bb0XOyPTCAxDsgrGv8K4tealvEDeyWArL9YPFsbBRGGeoVjZYg5OeWu1accUVrQ8YtJESeYt3qnJ_ZuYgi4o7o-6KuvAO3Lf2lCCSPRy1hTaJVMmufGmDag7hDODfjZjQdO-9SCTiEbPkRMRvCFRnrQcy3xvZlQJ7UTVITnxzhiDKzPXQOqGFmM42CbHSAq-d8fVv9fWNdHR_0ssDLhCcq5k27uwr-cMV3r-aH6B0O57EgSf5GJMrfhZ1bG"/></div>
+<p class="max-w-xs font-manrope text-xs tracking-wide text-[#695c4d] dark:text-[#e5e2dd] leading-relaxed">
+                    סלון הטיפוח המוביל לגברים המבינים באיכות, סגנון ודיוק ללא פשרות.
+                </p><p class="mt-4 font-manrope text-xs tracking-wide text-[#695c4d] dark:text-[#e5e2dd]">רח׳ הבעש״ט 18, חולון, ישראל</p>
+</div>
+<div class="grid grid-cols-2 gap-12 md:gap-24">
+<div class="flex flex-col gap-4">
+<span class="font-manrope text-xs tracking-[0.2em] uppercase font-bold text-primary mb-2">ניווט</span>
+<a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">בית</a>
+<a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">האקדמיה</a>
+<a class="font-manrope text-xs tracking-wide uppercase font-bold text-[#18281e] dark:text-[#fcf9f4]" href="#">שירותים</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-manrope text-xs tracking-[0.2em] uppercase font-bold text-primary mb-2">משפטי</span>
+<a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">מדיניות פרטיות</a>
+<a class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd] hover:text-[#18281e] dark:hover:text-white transition-colors" href="#">תנאי שימוש</a>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-outline-variant/10 text-center max-w-screen-2xl mx-auto">
+<p class="font-manrope text-xs tracking-wide uppercase text-[#695c4d] dark:text-[#e5e2dd]">© 2024 ALPHA. כל הזכויות שמורות.</p>
+</div>
+</footer>
+</body></html>
